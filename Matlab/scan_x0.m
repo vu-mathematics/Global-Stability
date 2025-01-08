@@ -1,11 +1,13 @@
 function [muopts,alphaopt]=scan_x0;
 
-N=40;
-x0opts=linspace(0.1,10,N)
+N=20;
+x0opts=[linspace(0.01,0.1,10) 0.2, 0.3, 0.5, 0.7, 0.85, linspace(1,10,N)];
+N=length(x0opts);
+
 for i=1:N
   x0 = x0opts(i);
   alphaopt(1:3,i) = opt_egm(x0);
-  muopts(i) = qorac(10000,alphaopt(:,end),x0,0,1)
+  muopts(i) = qorac(1000,alphaopt(:,end),x0,0)
 end
 
 save('alphaopts1.mat','alphaopt');
