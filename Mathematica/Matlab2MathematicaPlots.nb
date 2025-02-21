@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    159273,       3559]
-NotebookOptionsPosition[    156587,       3508]
-NotebookOutlinePosition[    156990,       3524]
-CellTagsIndexPosition[    156947,       3521]
+NotebookDataLength[    159333,       3565]
+NotebookOptionsPosition[    156650,       3514]
+NotebookOutlinePosition[    157049,       3530]
+CellTagsIndexPosition[    157006,       3527]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,16 +21,21 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell["\<\
-Import Matlab data from the Matlab function qORAC() and make proper plots \
-from them for the paper
+Make plots from Matlab simulation for Figure 4 in the paper
+\[OpenCurlyQuote]Biochemically sensing cellular growth rate facilitates its \
+robust optimal adaptation to changing conditions\[CloseCurlyQuote]
+by Planqu\[EAcute], Hulshof and Bruggeman.
+
 To make the data, run in Matlab:
->> [mu,t,y,mus] = qorac(400,1,[2,9,0.1],1);\
+>> [mu,t,y,mus] = qorac(400,1,[1,9,0.1],1);
+
+Change directories below where necessary.\
 \>", "Subtitle",
  CellChangeTimes->{{3.891664753898245*^9, 3.891664787694656*^9}, {
   3.9023011555504093`*^9, 3.902301177735821*^9}, {3.929512146736319*^9, 
   3.9295121497752743`*^9}, {3.9453276729070597`*^9, 3.945327696545671*^9}, {
-  3.945327741007511*^9, 
-  3.945327744007843*^9}},ExpressionUUID->"32316323-cd4d-4e64-8e38-\
+  3.945327741007511*^9, 3.945327744007843*^9}, {3.949133541663206*^9, 
+  3.949133653844883*^9}},ExpressionUUID->"32316323-cd4d-4e64-8e38-\
 c44307f41e6e"],
 
 Cell[CellGroupData[{
@@ -281,25 +286,25 @@ Cell[BoxData[{
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   TemplateBox[Association["color" -> Hue[0.55, 1, 0.7]],
+   TemplateBox[<|"color" -> Hue[0.55, 1, 0.7]|>,
     "HueColorSwatchTemplate"], ",", 
-   TemplateBox[Association["color" -> Hue[0.06, 1, 0.9]],
+   TemplateBox[<|"color" -> Hue[0.06, 1, 0.9]|>,
     "HueColorSwatchTemplate"], ",", 
-   TemplateBox[Association["color" -> Hue[0.25, 1, 0.55]],
+   TemplateBox[<|"color" -> Hue[0.25, 1, 0.55]|>,
     "HueColorSwatchTemplate"], ",", 
-   TemplateBox[Association["color" -> Hue[0.11, 0.9, 0.85]],
+   TemplateBox[<|"color" -> Hue[0.11, 0.9, 0.85]|>,
     "HueColorSwatchTemplate"], ",", 
-   TemplateBox[Association["color" -> Hue[0.5, 1, 0.5]],
+   TemplateBox[<|"color" -> Hue[0.5, 1, 0.5]|>,
     "HueColorSwatchTemplate"], ",", 
-   TemplateBox[Association["color" -> Hue[0.2, 1, 0.7]],
+   TemplateBox[<|"color" -> Hue[0.2, 1, 0.7]|>,
     "HueColorSwatchTemplate"], ",", 
-   TemplateBox[Association["color" -> Hue[0.08, 1, 0.7]],
+   TemplateBox[<|"color" -> Hue[0.08, 1, 0.7]|>,
     "HueColorSwatchTemplate"], ",", 
-   TemplateBox[Association["color" -> Hue[0.5, 0.8, 0.75]],
+   TemplateBox[<|"color" -> Hue[0.5, 0.8, 0.75]|>,
     "HueColorSwatchTemplate"], ",", 
-   TemplateBox[Association["color" -> Hue[0.45, 1, 0.5]],
+   TemplateBox[<|"color" -> Hue[0.45, 1, 0.5]|>,
     "HueColorSwatchTemplate"], ",", 
-   TemplateBox[Association["color" -> Hue[0.6, 0.5, 0.9]],
+   TemplateBox[<|"color" -> Hue[0.6, 0.5, 0.9]|>,
     "HueColorSwatchTemplate"]}], "}"}]], "Output",
  CellChangeTimes->{
   3.9334058479784393`*^9, 3.933405897456456*^9, 3.9334060551946363`*^9, {
@@ -311,42 +316,42 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   TemplateBox[Association[
+   TemplateBox[<|
     "color" -> RGBColor[
-      0.803921568627451, 0.30980392156862746`, 0.07058823529411765]],
+      0.803921568627451, 0.30980392156862746`, 0.07058823529411765]|>,
     "RGBColorSwatchTemplate"], ",", 
-   TemplateBox[Association[
-    "color" -> RGBColor[1., 0.7254901960784313, 0.09411764705882353]],
+   TemplateBox[<|
+    "color" -> RGBColor[1., 0.7254901960784313, 0.09411764705882353]|>,
     "RGBColorSwatchTemplate"], ",", 
-   TemplateBox[Association[
+   TemplateBox[<|
     "color" -> RGBColor[
-      0.9568627450980393, 0.796078431372549, 0.13725490196078433`]],
+      0.9568627450980393, 0.796078431372549, 0.13725490196078433`]|>,
     "RGBColorSwatchTemplate"], ",", 
-   TemplateBox[Association[
+   TemplateBox[<|
     "color" -> RGBColor[
-      0.9529411764705882, 0.9803921568627451, 0.5725490196078431]],
+      0.9529411764705882, 0.9803921568627451, 0.5725490196078431]|>,
     "RGBColorSwatchTemplate"], ",", 
-   TemplateBox[Association[
-    "color" -> RGBColor[0.4117647058823529, 0.592156862745098, 0.4]],
+   TemplateBox[<|
+    "color" -> RGBColor[0.4117647058823529, 0.592156862745098, 0.4]|>,
     "RGBColorSwatchTemplate"], ",", 
-   TemplateBox[Association[
+   TemplateBox[<|
     "color" -> RGBColor[
-      0.30980392156862746`, 0.47058823529411764`, 0.34509803921568627`]],
+      0.30980392156862746`, 0.47058823529411764`, 0.34509803921568627`]|>,
     "RGBColorSwatchTemplate"], ",", 
-   TemplateBox[Association[
+   TemplateBox[<|
     "color" -> RGBColor[
-      0.2980392156862745, 0.28627450980392155`, 0.5490196078431373]],
+      0.2980392156862745, 0.28627450980392155`, 0.5490196078431373]|>,
     "RGBColorSwatchTemplate"], ",", 
-   TemplateBox[Association[
+   TemplateBox[<|
     "color" -> RGBColor[
-      0.27058823529411763`, 0.1843137254901961, 0.3764705882352941]],
+      0.27058823529411763`, 0.1843137254901961, 0.3764705882352941]|>,
     "RGBColorSwatchTemplate"], ",", 
-   TemplateBox[Association[
+   TemplateBox[<|
     "color" -> RGBColor[
-      0.8784313725490196, 0.10196078431372549`, 0.20784313725490197`]],
+      0.8784313725490196, 0.10196078431372549`, 0.20784313725490197`]|>,
     "RGBColorSwatchTemplate"], ",", 
-   TemplateBox[Association[
-    "color" -> RGBColor[0.8, 0.058823529411764705`, 0.07450980392156863]],
+   TemplateBox[<|
+    "color" -> RGBColor[0.8, 0.058823529411764705`, 0.07450980392156863]|>,
     "RGBColorSwatchTemplate"]}], "}"}]], "Input",
  CellChangeTimes->{{3.943598269622052*^9, 
   3.943598269623694*^9}},ExpressionUUID->"0bca0334-34ba-47a5-9479-\
@@ -1082,9 +1087,9 @@ Cell[BoxData[{
       RowBox[{
        RowBox[{"{", 
         RowBox[{
-         TemplateBox[Association[
+         TemplateBox[<|
           "color" -> RGBColor[
-            0.27058823529411763`, 0.1843137254901961, 0.3764705882352941]],
+            0.27058823529411763`, 0.1843137254901961, 0.3764705882352941]|>,
           "RGBColorSwatchTemplate"], ",", 
          RowBox[{"Thickness", "[", "0.005", "]"}], ",", 
          RowBox[{"Dashing", "[", "Medium", "]"}]}], "}"}], ",", 
@@ -1105,6 +1110,7 @@ Cell[BoxData[{
              FrameStyle->RGBColor[
               0.27450980392156865`, 0.3947712418300654, 0.2666666666666667],
              FrameTicks->None,
+             
              ImageSize->
               Dynamic[{
                Automatic, 
@@ -3508,7 +3514,7 @@ Cell[BoxData[""], "Input",
 },
 WindowSize->{1280, 770},
 WindowMargins->{{1100, Automatic}, {Automatic, -1011}},
-FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
+FrontEndVersion->"14.1 for Mac OS X ARM (64-bit) (July 16, 2024)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"f2bc7203-1d9c-4924-963d-a1335e5f28be"
 ]
@@ -3524,42 +3530,42 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 529, 11, 117, "Subtitle",ExpressionUUID->"32316323-cd4d-4e64-8e38-c44307f41e6e"],
+Cell[580, 22, 767, 16, 270, "Subtitle",ExpressionUUID->"32316323-cd4d-4e64-8e38-c44307f41e6e"],
 Cell[CellGroupData[{
-Cell[1134, 37, 1967, 40, 115, "Input",ExpressionUUID->"3f60aa89-c39d-48bc-93bf-500e57bdb56b"],
-Cell[3104, 79, 762, 15, 34, "Output",ExpressionUUID->"66b4d5cb-7181-4996-a292-4eefdf47af14"]
+Cell[1372, 42, 1967, 40, 111, "Input",ExpressionUUID->"3f60aa89-c39d-48bc-93bf-500e57bdb56b"],
+Cell[3342, 84, 762, 15, 33, "Output",ExpressionUUID->"66b4d5cb-7181-4996-a292-4eefdf47af14"]
 }, Open  ]],
-Cell[3881, 97, 5443, 171, 409, "Input",ExpressionUUID->"6559e52c-5f2d-4e42-8cb4-d8bb8ce1bfed"],
+Cell[4119, 102, 5443, 171, 397, "Input",ExpressionUUID->"6559e52c-5f2d-4e42-8cb4-d8bb8ce1bfed"],
 Cell[CellGroupData[{
-Cell[9349, 272, 352, 6, 52, "Input",ExpressionUUID->"add102fa-9f7f-4013-84d1-ad80ca7cb68a"],
-Cell[9704, 280, 1324, 27, 34, "Output",ExpressionUUID->"6c3068d1-f627-44fa-af32-e13f00acd387"]
+Cell[9587, 277, 352, 6, 49, "Input",ExpressionUUID->"add102fa-9f7f-4013-84d1-ad80ca7cb68a"],
+Cell[9942, 285, 1234, 27, 33, "Output",ExpressionUUID->"6c3068d1-f627-44fa-af32-e13f00acd387"]
 }, Open  ]],
-Cell[11043, 310, 1712, 42, 30, "Input",ExpressionUUID->"0bca0334-34ba-47a5-9479-8b333c93db10"],
+Cell[11191, 315, 1622, 42, 29, "Input",ExpressionUUID->"0bca0334-34ba-47a5-9479-8b333c93db10"],
 Cell[CellGroupData[{
-Cell[12780, 356, 41613, 1044, 628, "Input",ExpressionUUID->"4155525f-cb66-455c-9189-4f12245f8251"],
-Cell[54396, 1402, 9102, 175, 312, "Output",ExpressionUUID->"260a8f8c-98ba-4324-9039-0241ff10090e"],
-Cell[63501, 1579, 33214, 574, 312, "Output",ExpressionUUID->"701031cf-c767-4eec-b3a5-2a9aaccba23a"],
-Cell[96718, 2155, 18474, 332, 312, "Output",ExpressionUUID->"8e8f4d45-171c-4a16-a74d-c0198ac99499"]
+Cell[12838, 361, 41618, 1045, 565, "Input",ExpressionUUID->"4155525f-cb66-455c-9189-4f12245f8251"],
+Cell[54459, 1408, 9102, 175, 312, "Output",ExpressionUUID->"260a8f8c-98ba-4324-9039-0241ff10090e"],
+Cell[63564, 1585, 33214, 574, 312, "Output",ExpressionUUID->"701031cf-c767-4eec-b3a5-2a9aaccba23a"],
+Cell[96781, 2161, 18474, 332, 312, "Output",ExpressionUUID->"8e8f4d45-171c-4a16-a74d-c0198ac99499"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[115241, 2493, 274, 6, 53, "Subtitle",ExpressionUUID->"167465c6-f44e-4825-bf00-104a0c206648"],
-Cell[115518, 2501, 2695, 83, 199, "Input",ExpressionUUID->"2b69f554-2d4f-41fc-8c9c-7efb046a344a"],
-Cell[118216, 2586, 4163, 107, 98, "Input",ExpressionUUID->"2440c24c-3e4f-43cb-88c1-e1a9ff761273"],
+Cell[115304, 2499, 274, 6, 53, "Subtitle",ExpressionUUID->"167465c6-f44e-4825-bf00-104a0c206648"],
+Cell[115581, 2507, 2695, 83, 199, "Input",ExpressionUUID->"2b69f554-2d4f-41fc-8c9c-7efb046a344a"],
+Cell[118279, 2592, 4163, 107, 98, "Input",ExpressionUUID->"2440c24c-3e4f-43cb-88c1-e1a9ff761273"],
 Cell[CellGroupData[{
-Cell[122404, 2697, 10828, 257, 220, "Input",ExpressionUUID->"8c5e8bae-e0ca-4220-96f9-9f15c3ff12c5"],
-Cell[133235, 2956, 4136, 94, 368, "Output",ExpressionUUID->"0a8dde54-8fee-4eea-840b-44d62b28d64c"],
-Cell[137374, 3052, 1703, 25, 34, "Output",ExpressionUUID->"3e044c9d-b177-4670-8eaa-7bcd3c43b404"]
+Cell[122467, 2703, 10828, 257, 220, "Input",ExpressionUUID->"8c5e8bae-e0ca-4220-96f9-9f15c3ff12c5"],
+Cell[133298, 2962, 4136, 94, 368, "Output",ExpressionUUID->"0a8dde54-8fee-4eea-840b-44d62b28d64c"],
+Cell[137437, 3058, 1703, 25, 34, "Output",ExpressionUUID->"3e044c9d-b177-4670-8eaa-7bcd3c43b404"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[139126, 3083, 226, 5, 53, "Subtitle",ExpressionUUID->"5b4f25c1-4f80-46a5-8d46-546f788a5d9e"],
+Cell[139189, 3089, 226, 5, 53, "Subtitle",ExpressionUUID->"5b4f25c1-4f80-46a5-8d46-546f788a5d9e"],
 Cell[CellGroupData[{
-Cell[139377, 3092, 12334, 307, 392, "Input",ExpressionUUID->"ff2c8416-0376-48cf-8e1c-d08b8abaa856"],
-Cell[151714, 3401, 3456, 78, 368, "Output",ExpressionUUID->"bbdc510b-c4df-4d98-9387-d09e3568f16b"],
-Cell[155173, 3481, 1181, 17, 34, "Output",ExpressionUUID->"433669cb-4a75-48e1-a1e0-5cadd177f9ab"]
+Cell[139440, 3098, 12334, 307, 392, "Input",ExpressionUUID->"ff2c8416-0376-48cf-8e1c-d08b8abaa856"],
+Cell[151777, 3407, 3456, 78, 368, "Output",ExpressionUUID->"bbdc510b-c4df-4d98-9387-d09e3568f16b"],
+Cell[155236, 3487, 1181, 17, 34, "Output",ExpressionUUID->"433669cb-4a75-48e1-a1e0-5cadd177f9ab"]
 }, Open  ]],
-Cell[156369, 3501, 202, 4, 30, "Input",ExpressionUUID->"d4d336a0-dd95-4063-bc75-88616160cfbe"]
+Cell[156432, 3507, 202, 4, 30, "Input",ExpressionUUID->"d4d336a0-dd95-4063-bc75-88616160cfbe"]
 }, Open  ]]
 }
 ]
